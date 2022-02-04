@@ -1,0 +1,4 @@
+var attributes = ""
+if(isempty($feature["Post_Box"])){attributes = ""}
+else{attributes= TextFormatting.NewLine+"The PO Box # of this address is:"}
+return attributes
