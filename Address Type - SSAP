@@ -1,0 +1,4 @@
+var attributes = ""
+if(isempty($feature["AddrType"])){attributes= ""}
+else{attributes= TextFormatting.NewLine+Proper(DomainName($feature,"AddrType"))+TextFormatting.NewLine}
+return attributes
