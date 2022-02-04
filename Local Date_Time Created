@@ -1,0 +1,1 @@
+Text(ToLocal($feature.created_date), 'MMMM D, Y @ HMM')+' Hrs'
