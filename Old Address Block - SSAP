@@ -1,0 +1,11 @@
+var attributes = ""
+var b = $feature["Old_Address"];
+var c = $feature["FirstName"];
+var d = $feature["LastName"];
+var e = $feature["Post_Comm"];
+var f = $feature["State"];
+var g = $feature["Post_Code"];
+var h = ""
+If(IsEmpty($feature["Old_Address"])){attributes= ""}
+else{attributes= c+" "+d+TextFormatting.NewLine+b+TextFormatting.NewLine+e+" "+f+" "+g+TextFormatting.NewLine}
+return attributes
