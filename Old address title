@@ -1,0 +1,4 @@
+var attributes = ""
+If(IsEmpty($feature["Old_Address"])){attributes= ""}
+else{attributes= TextFormatting.NewLine+"This address has been previously changed, the former address was:"+TextFormatting.NewLine}
+return attributes
