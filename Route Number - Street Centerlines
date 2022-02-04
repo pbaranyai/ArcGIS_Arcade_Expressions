@@ -1,0 +1,4 @@
+var attributes = ""
+if(isempty($feature.RouteNumber)){attributes= ""}
+else{attributes= "Route # "+($feature.RouteNumber)}
+return attributes
