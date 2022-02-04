@@ -1,0 +1,4 @@
+var attributes = ""
+If($feature["BPE_USRFLD_01"] == null){attributes= TextFormatting.NewLine+"No Permit Received - contact your local municipality to verify permitting requirements"+TextFormatting.NewLine}
+else{attributes= ""}
+return attributes
