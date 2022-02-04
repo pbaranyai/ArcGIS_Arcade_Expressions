@@ -1,0 +1,4 @@
+var attributes = ""
+if(isempty($feature["NumberOfUnits"])){attributes = ""}
+else{attributes= TextFormatting.NewLine+"This location has "+$feature["NumberOfUnits"]+" units, for more information please see the Apartment/Suite table at the bottom of the pop-up"+TextFormatting.NewLine}
+return attributes
