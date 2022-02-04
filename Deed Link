@@ -1,0 +1,1 @@
+when($feature["SLH_BOOK"] == null,"",$feature["SLH_PAGE"] == null,"", "Click for deed link")
