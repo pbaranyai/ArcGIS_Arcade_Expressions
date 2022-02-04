@@ -1,0 +1,4 @@
+var attributes = ""
+if(isempty($feature.LegislativeRouteNumber)){attributes= ""}
+else{attributes= TextFormatting.NewLine+"Legislative Route # "+($feature.LegislativeRouteNumber)}
+return attributes
