@@ -1,2 +1,2 @@
 # ArcGIS_Arcade_Expressions
-Expressions used in ArcGIS Arcade
+Various Expressions used in ArcGIS Arcade
