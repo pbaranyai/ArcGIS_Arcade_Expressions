@@ -1,0 +1,4 @@
+var attributes = ""
+if(isempty($feature["Old_RRBox"])){attributes = ""}
+else{attributes= TextFormatting.NewLine+"Before 911, the address of this structure was:"}
+return attributes
