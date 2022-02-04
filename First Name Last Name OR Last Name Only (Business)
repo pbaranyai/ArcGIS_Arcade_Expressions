@@ -1,0 +1,4 @@
+var attributes = ""
+if(isempty($feature["FirstName"])){attributes= Proper($feature["LastName"])}
+else{attributes= Proper($feature["FirstName"])+" "+Proper($feature["LastName"])}
+return attributes
