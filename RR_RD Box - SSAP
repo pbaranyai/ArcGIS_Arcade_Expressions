@@ -1,0 +1,4 @@
+var attributes = ""
+if(IsEmpty($feature["Old_RRBox"])){attributes= ""}
+else{attributes= TextFormatting.NewLine+$feature["Old_RRType"]+" "+$feature["Old_RRNumber"]+" / RR Box # "+$feature["Old_RRBox"]+TextFormatting.NewLine}
+return attributes
