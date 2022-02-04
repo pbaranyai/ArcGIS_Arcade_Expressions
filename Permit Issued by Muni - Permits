@@ -1,0 +1,4 @@
+var attributes = TextFormatting.NewLine+"Permit issued by: "+$feature["MUNI_NAME"]+TextFormatting.NewLine
+If($feature["BPE_USRFLD_01"]== 'Y'){attributes= TextFormatting.NewLine+"Permit issued by: "+$feature["MUNI_NAME"]+TextFormatting.NewLine}
+else{attributes= ""}
+return attributes
