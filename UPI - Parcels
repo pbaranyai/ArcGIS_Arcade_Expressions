@@ -1,0 +1,4 @@
+var attributes = ""
+if(IsEmpty($feature["REM_PIN"])){attributes= ""}
+else{attributes= "UPI#: "+" "+$feature["REM_PIN"]}
+return attributes
