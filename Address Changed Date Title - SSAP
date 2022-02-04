@@ -1,0 +1,4 @@
+var attributes = ""
+If(IsEmpty($feature["AddressChange_Date"])){attributes= ""}
+else{attributes= TextFormatting.NewLine+"This address was changed on: "+Text($feature["AddressChange_Date"], 'MMMM D, Y')+TextFormatting.NewLine}
+return attributes
