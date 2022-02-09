@@ -1,0 +1,4 @@
+var intersectLayer=Intersects(FeatureSetByName($map,"PA Senate Election Districts"),$feature)
+for (var f in intersectLayer){
+    return Proper(f.REP_NAME)
+}
