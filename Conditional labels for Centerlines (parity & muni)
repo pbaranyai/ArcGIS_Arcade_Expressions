@@ -1,0 +1,7 @@
+var attributes = ""
+If($feature["CL_MUNI"] == "DUAL" && $feature["PARITY_LEFT"] == 'E' && $feature["CL_OWNER"] == 9){attributes= " is responsible for the even # addresses side of the road & "}
+else if($feature["CL_MUNI"] == "DUAL" && $feature["PARITY_LEFT"] == 'O' && $feature["CL_OWNER"] == 9){attributes=" is responsible for the odd # addresses side of the road & "}
+else if($feature["CL_MUNI"] == "DUAL" && $feature["PARITY_RIGHT"] == 'E' && $feature["CL_OWNER"] == 9){attributes= " is responsible for the even # addresses side of the road."}
+else if($feature["CL_MUNI"] == "DUAL" && $feature["PARITY_RIGHT"] == 'O' && $feature["CL_OWNER"] == 9){attributes= " is responsible for the odd # addresses side of the road, click municipality name to find contact information."}
+else{attributes= ""}
+return attributes
