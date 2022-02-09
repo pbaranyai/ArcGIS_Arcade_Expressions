@@ -1,0 +1,13 @@
+//Open and Closed are separate expressions to change color in label
+//Create date object for opening date and time, UTC date and time is used to create the datetime object and then converted to local time (months are 0-11 with 0 being January and 11 being December)
+var open = tolocal(Date(2021,10,2,07,00))
+//Create date object for closing date and time (months are 0-11 with 0 being January and 11 being December)
+var closed = tolocal(Date(2021,10,2,20,00))
+//Get current date and time. Now() returns the current date and time in the local time of the client.
+var present = Now()
+//Check if current time is between opening time and closing time
+If(present>=open && present < closed) {
+    return "Polling Place is currently open"
+}   else {
+        return ""
+}
