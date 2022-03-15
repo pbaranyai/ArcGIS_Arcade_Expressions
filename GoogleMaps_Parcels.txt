@@ -1,0 +1,5 @@
+// Google maps search
+var lat = Replace(Text($feature["Latitude_Y"], "#.#######"), ",", ".");
+var lon = Replace(Text($feature["Longitude_X"], "#.#######"), ",", ".");
+var url = "https://www.google.com/maps/@?api=1&map_action=map&center=" + lat + "," + lon+"&zoom=18&basemap=satellite&layer=transit";
+return url;

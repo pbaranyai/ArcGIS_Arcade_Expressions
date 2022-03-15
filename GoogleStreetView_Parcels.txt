@@ -1,0 +1,6 @@
+// Google Street View search
+var lat = Replace(Text($feature["Latitude_Y"], "#.#######"), ",", ".");
+var lon = Replace(Text($feature["Longitude_X"], "#.#######"), ",", ".");
+var url = "http://maps.google.com/?cbll=" + lat + "," + lon+"&cbp=12,90,0,0,5&layer=c";
+return url;
+
